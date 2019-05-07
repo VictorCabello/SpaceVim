@@ -14,6 +14,8 @@ show you how to install it, how to config it, and explain its features.
 - [Install](#install)
   - [Linux and macOS](#linux-and-macos)
   - [Windows](#windows)
+    - [Fonts](#fonts)
+    - [Vimproc](#vimproc)
 - [Run in docker](#run-in-docker)
 - [Configuration](#configuration)
 - [Online tutor](#online-tutor)
@@ -45,6 +47,26 @@ curl -sLf https://spacevim.org/install.sh | bash -s -- -h
 ### Windows
 
 The easiest way is to download [install.cmd](https://spacevim.org/install.cmd) and run it as administrator, or install SpaceVim manually.
+
+This script almost comlete the instalation but maybe it is necessary to perfrom some addional actions.
+
+#### Fonts
+
+The current font used by spacevim is "DejaVu Sans Mono for Powerline", to install it in Windows you could download from the follwing link:
+
+https://github.com/powerline/fonts/raw/master/DejaVuSansMono/DejaVu%20Sans%20Mono%20for%20Powerline.ttf
+
+#### Vimproc
+
+If vimproc can't finish the build process you could download the binary from the main github repo:
+
+https://github.com/Shougo/vimproc.vim/releases
+
+Once downloaded you need to put your dll on the follwing path
+
+```
+~/.cache/vimfiles/repos/github.com/Shougo/vimproc.vim/lib/
+```
 
 ## Run in docker
 
